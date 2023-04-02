@@ -1,3 +1,3 @@
-Create this react component:
+Generate this react component:
 
 A button component with hover, pressed, and disabled states.

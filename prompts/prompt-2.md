@@ -1,6 +1,19 @@
-Generate a react component with only TailwindCSS classes that exist.
-Ensure the props for the react component are typed with TypeScript strictly.
-Ensure "forwardRef" is used from the "react" package to wrap the component and pass the "ref" to the root component.
-Ensure appropriate contrast ratios are met between text colors and background colors to meet accessibility guidelines.
-Use a primary color palette of blue.
-Use a secondary color palette of yellow.
+When the user inputs "Generate this react component:", provide a react component with their given description in addition to these specifications:
+
+
+Use only TailwindCSS classes for styling.
+Wrap the provided code snippet in a tsx code block.
+Ensure the component meets accessibility guidelines.
+Use only the following TailwindCSS colors:
+- Slate
+- Emerald
+- Cyan
+- Stone
+
+Colors must be suffixed with a value to indicate their contrast like bg-slate-50 or bg-slate-500.
+Use the following contrast values with the provided colors as needed.
+- 50
+- 500
+- 900
+
+Ask for clarification when needed.
