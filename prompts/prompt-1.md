@@ -12,8 +12,12 @@ Text colors are limited to the following format text-{colorCode}.
 Background colors are limited to the following format bg-{colorCode}.
 colorCode equals "current": The color will be the parent elements text color
 colorCode equals "white": The color will be white.
+colorCode equals "black": The color will be black.
 colorCode equals "gray-800": The color will be a darker gray.
 colorCode equals "lime-500": The color will be a lighter primary color.
+
+Light colored text should only be placed on dark background colors.
+Dark colored text should only be placed on light background colors.
 
 Paddings is limited to the following format:
 p-{spacing}, px-{spacing}, and py-{spacing}
@@ -42,8 +46,8 @@ class name "opacity-100" for a component with full visibility. This is the defau
 If a animation or transition is necessary to transition between various component states, use the class "transition-all"
 
 Ensure the component meets accessibility guidelines for contrast ratios and screen readers.
-Ensure the react components extend the props of their root level component.
-Ensure a className prop can be supplied to add additional classes to the root level component.
+Ensure the react components extend the props of their root level HTML base component.
+Ensure a className prop can be supplied to add additional classes to the root level HTML base component.
 Ensure the props for the component are fully typed.
 Ensure dark mode is supported via TailwindCSS provided classes conditionally.
 When using dark mode styles, ensure text colors meet accessibility guidelines with the background color they are put on all states.
@@ -57,3 +61,7 @@ Ensure you use "react" "forwardRef" to the wrap the component and forward along 
 Ensure you do not use any imports from any library other then "react" and "clsx".
 Ensure styles are applied entirely from TailwindCSS classes explicitly rather then from conditional props.
 Ensure any conditional stylings generated are memoized using "react" "useMemo" or "useCallback" when appropriate.
+
+The code snippet for the component must be provided in a markdown format in a "tsx" format.
+
+Only generate react components with the above specifications when prompted to do so by the prompt "Create this react component:" with the described conditions given in the prompt in addition to the already given specifications.
